@@ -1,0 +1,229 @@
+/* Reset geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Site */
+header {
+    background-color: #F7B600;
+    text-align: center;
+    padding: 15px;
+}
+
+header h1 {
+    color: #4E4E4E;
+}
+
+header h1, header span {
+    font-size: 4rem;
+}
+
+header span {
+    color: #FFF;
+}
+
+nav {
+    padding: 10px 0px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+nav li a {
+    padding: 5px 15px;
+    border-radius: 6px;
+    display: inline-block;
+    font-size: 1.6rem;
+    color: #FFF;
+}
+
+nav li a:hover {
+    background-color: #FFF;
+    color: #000;
+}
+
+main {
+    background-color: #E6E6E6;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 30px 15px;
+    gap: 15px;
+}
+
+section.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+div.postagens {
+    background-color: #FFF;
+    max-width: 600px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 15px 20px;
+}
+
+div.postagens h2, div.postagens a, div.conteudo a {
+    color: #F7B600;
+}
+
+div.postagens a, div.conteudo a {
+    font-weight: bold;
+}
+
+div.postagens h2 {
+    font-size: 2.6rem;
+}
+
+div.postagens span {
+    font-size: 1.3rem;
+}
+
+div.postagens img {
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+div.postagens p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+div.postagens a {
+    font-size: 1.4rem;
+}
+
+div.postagens a:hover {
+    text-decoration: underline;
+}
+
+section.conteudo-lateral div.conteudo {
+    background-color: #FFF;
+    max-width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: grid;
+    gap: 5px;
+}
+
+div.conteudo h3 {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #CCCCCC;
+}
+
+div.conteudo p, div.conteudo a {
+    font-size: 1.3rem;
+}
+
+div.conteudo a:hover {
+    text-decoration: underline;
+}
+
+div.categorias ul {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 5px;
+}
+
+footer {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 20px;
+    background-color: #CCCCCC;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+footer a {
+    color: #0000ff;
+}
+
+@media (max-width: 500px) {
+    header h1, header span {
+        font-size: 3rem;
+    }
+
+    nav li a {
+        padding: 5px 10px;
+        border-radius: 6px;
+        font-size: 1.5rem;
+        color: #FFF;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    div.postagens h2 {
+        font-size: 1.7rem;
+    }
+
+    div.postagens span {
+        font-size: 1rem;
+    }
+
+    div.postagens p {
+    font-size: 1.3rem;
+    }
+
+    div.postagens a {
+        font-size: 1.2rem;
+    }
+
+
+    section.conteudo-lateral {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section.conteudo-lateral div.categorias {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.conteudo h3 {
+        font-size: 1.4rem;
+    }
+
+    div.conteudo p, div.conteudo a {
+        font-size: 1.2rem;
+    }
+
+    div.categorias ul {
+        grid-template-columns: 1fr;
+        flex: 1;
+    }
+}
